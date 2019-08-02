@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "devStart": "nodemon --watch ./ ./bin/www",
-    "seedDev": "node_modules/.bin/sequelize db:seed:all --env dev"
+    "seedDev": "node_modules/.bin/sequelize db:seed:all --env dev",
+    "seedDevNot": "node_modules/.bin/sequelize db:seed:undo:all --env dev"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
